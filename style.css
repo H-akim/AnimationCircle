@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-image: url(images/img1.jpg); */
+    background-position: center;
+    background-size: cover;
+    transition: 1.5s;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 200px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 50px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+nav ul li:first-child{
+    margin: 0;
+}
+.circle_box{
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#svgcircle{
+    stroke-dasharray: 1256;
+    stroke-dashoffset: 1256;
+    transition: 1s;
+}
+span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+}
+#step1{
+    right: 160px;
+    bottom: 30px;
+}
+#step2{
+    left: 56px;
+    bottom: 106px;
+}
+#step3{
+    left: 60px;
+    top: 100px;
+}
+#step4{
+    right: 156px;
+    top: 30px;
+}
+#step5{
+    right: 20px;
+    top: 220px;
+}
+.user_box{
+    width: 350px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    transition: 1s;
+    text-transform: capitalize;
+}
+.user img{
+    width: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.social_links img{
+    width: 20px;
+    border-radius: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.user_box p{
+    margin: 20px 0px;
+    color: #c0c0c0;
+    line-height: 25px;
+}
+.user{
+    height: 450px;
+}
+
+
+/* media screen */
+
+
+@media screen and (max-width: 645px) {
+    nav ul li{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    nav ul li{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .logo img{
+        width: 200px;
+    }
+}
+
+
